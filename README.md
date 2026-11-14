@@ -1,17 +1,45 @@
-# pet_blog
+# Pet Blog 🐾
 
-A new Flutter project.
+A cross-platform Flutter app where pet owners share blog posts about their pets, built with Firebase.
 
-## Getting Started
+## Tech stack
 
-This project is a starting point for a Flutter application.
+Flutter, Dart, Firebase Auth, Cloud Firestore, Provider
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- [x] Sign up, log in, log out (with show/hide password)
+- [x] Real-time post feed
+- [ ] Create post with image
+- [ ] Post detail and profile
+- [ ] Edit and delete posts
+- [ ] Likes and comments
+- [ ] Search and categories
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+Coming soon.
+
+## Project structure
+
+
+lib/
+├── models/ # Post, AppUser
+├── services/ # Auth and Firestore services
+├── providers/ # State management (Provider)
+├── screens/ # auth, home, ...
+└── widgets/ # Reusable UI (PostCard)
+
+
+
+## Setup
+
+1. Clone the repo
+2. Create a Firebase project and enable Email/Password auth and Firestore
+3. Run `flutterfire configure` to generate `lib/firebase_options.dart`
+4. Run `flutter pub get`
+5. Run `flutter run`
+
+## Author
+
+Mirisha Poudel
